@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Registro - Fantasy Shop</title>
+</head>
+<body>
+  <header>
+    <h1>⚔ Fantasy Shop ⚔</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a href="catalogo.html">Catálogo</a>
+    </nav>
+  </header>
+
+  <div class="registro card">
+    <h2>Crear Cuenta</h2>
+    <form id="form-registro" onsubmit="return validarRegistro();">
+      <label for="usuario">Nombre del aventurero</label>
+      <input id="usuario" name="usuario" type="text" placeholder="Ej: Ardan" required minlength="2" maxlength="40">
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" placeholder="tu@dominio.com" required>
+
+      <label for="clave">Contraseña</label>
+      <input id="clave" name="clave" type="password" placeholder="Mínimo 8 caracteres" required>
+
+      <label for="confirmar">Confirmar contraseña</label>
+      <input id="confirmar" name="confirmar" type="password" placeholder="Repite la contraseña" required>
+
+      <div id="registro-feedback" class="feedback" aria-live="polite"></div>
+
+      <button type="submit" class="btn">Entrar al Reino</button>
+    </form>
+  </div>
+
+  <script src="js/js.scrpt.js"></script>
+</body>
+</html>

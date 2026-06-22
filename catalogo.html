@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Catálogo - Fantasy Shop</title>
+</head>
+<body>
+  <header>
+    <h1>⚔ Fantasy Shop ⚔</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a href="catalogo.html">Catálogo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="productos" id="catalogo">
+      <article class="card item">
+  <img class="pixel" src="assets/femur" alt="femur">
+  <h3>femur ¿te hace falta uno?</h3>
+  <p class="price">50</p>
+  <button onclick="agregar('femur',50)">Agregar</button>
+</article>
+
+       <section class="productos" id="catalogo">
+      <article class="card item">
+  <img class="pixel" src="assets/Hammer and Shovel" alt="Hammer and Shovel">
+  <h3>Necesario para armar un campamento</h3>
+  <p class="price">85</p>
+  <button onclick="agregar('Hammer and Shovel',85)">Agregar</button>
+</article>
+
+       <section class="productos" id="catalogo">
+      <article class="card item">
+  <img class="pixel" src="assets/helmet" alt="helmet">
+  <h3>Protege de piedras y algunas flechas</h3>
+  <p class="price">120</p>
+  <button onclick="agregar('helmet',120)">Agregar</button>
+</article>
+
+       <section class="productos" id="catalogo">
+      <article class="card item">
+  <img class="pixel" src="assets/Pataepollo" alt="Pataepollo">
+  <h3>Raciones</h3>
+  <p class="price">8</p>
+  <button onclick="agregar('Pataepollo',8)">Agregar</button>
+</article>
+
+       <section class="productos" id="catalogo">
+      <article class="card item">
+  <img class="pixel" src="assets/sword_normal" alt="sword_normal">
+  <h3>Espada rudimentaria</h3>
+  <p class="price">125</p>
+  <button onclick="agregar('sword_normal',125)">Agregar</button>
+</article>
+
+       <section class="productos" id="catalogo">
+      <article class="card item">
+  <img class="pixel" src="assets/sword_shiny1" alt="sword_shiny1">
+  <h3>Espada brillosa</h3>
+  <p class="price">150</p>
+  <button onclick="agregar('sword_shiny1',150)">Agregar</button>
+</article>
+
+    <aside class="carrito card" id="carrito">
+      <h4>Tu bolsa</h4>
+      <div id="lista"></div>
+      <div class="total-row">Total: <span id="total">0</span> monedas</div>
+      <button class="btn" onclick="vaciarCarrito()">Vaciar bolsa</button>
+    </aside>
+  </main>
+
+  <script src="js/js.scrpt.js"></script>
+</body>
+</html>
